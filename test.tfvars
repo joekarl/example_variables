@@ -9,4 +9,4 @@ aws_bucket_name = "foo"
 
 cpu_capacity  = 7
 
-admin_user = "{ \"name\" = \"<YOUR_NAME>\", \"email\" = \"<YOUR_EMAIL>\"}"
+admin_user = { "name" = "<YOUR_NAME>", "email" = "<YOUR_EMAIL>"}
