@@ -14,7 +14,7 @@ variable "word_count" {
 variable "sleep_seconds" {
   type = number
   description = "A locally executed script will wait this amout of time between retries"
-  default = null
+  default = 5
 }
 
 variable "availability_zones" {
