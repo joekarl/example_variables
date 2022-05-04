@@ -14,7 +14,16 @@ variable "word_count" {
 variable "sleep_seconds" {
   type = number
   description = "A locally executed script will wait this amout of time between retries"
+  default = null
 }
+
+
+variable "sleep_seconds" {
+  type = number
+  description = "A locally executed script will wait this amout of time between retries"
+  default = "${terraform.workspace == "surprising-workspace" ? 7 : null}"
+}
+
 
 variable "availability_zones" {
   type = list(string)
@@ -23,8 +32,8 @@ variable "availability_zones" {
 
 variable "secret_key" {
   type = string
-  sensitive = true
   description = "Your secret key."
+  default = "${terraform.workspace == "surprising-workspace" ? "surprise!" : "not surprising"}"
 }
 
 # This variable has a default value and will not show up
