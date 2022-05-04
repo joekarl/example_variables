@@ -6,11 +6,6 @@ variable "word_count" {
   description = "A locally executed script will wait this amout of time between retries"
 }
 
-variable "word_count" {
-  type = number
-  description = "A locally executed script will wait this amout of time between retries"
-}
-
 variable "sleep_seconds" {
   type = number
   description = "A locally executed script will wait this amout of time between retries"
