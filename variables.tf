@@ -17,6 +17,11 @@ variable "availability_zones" {
   description = "A list of chosen aws availability zones."
 }
 
+variable "availability_zones2" {
+  type = list(string)
+  description = "A list of chosen aws availability zones2."
+}
+
 # This variable has a default value and will not show up
 # in the variable editor
 variable "aws_region_default" {
